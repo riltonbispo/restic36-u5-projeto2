@@ -2,13 +2,53 @@
   "posts": [
     {
       "id": 1,
-      "title": "First Post",
-      "content": "This is the first post"
+      "title": "A Importância da Tecnologia na Educação",
+      "content": "Com o avanço tecnológico, a educação tem se transformado rapidamente. As ferramentas digitais permitem que o aprendizado seja mais acessível e dinâmico, conectando estudantes e professores de maneiras inovadoras."
     },
     {
       "id": 2,
-      "title": "Second Post",
-      "content": "This is the second post"
+      "title": "Dicas para Melhorar a Produtividade no Trabalho",
+      "content": "A produtividade no ambiente de trabalho pode ser melhorada com a adoção de práticas como organização de tarefas, uso de ferramentas de gerenciamento de tempo e pausas estratégicas ao longo do dia."
+    },
+    {
+      "id": 3,
+      "title": "Como Cuidar da Saúde Mental no Dia a Dia",
+      "content": "A saúde mental é tão importante quanto a saúde física. Meditação, exercícios físicos regulares, uma boa noite de sono e o acompanhamento psicológico são essenciais para manter o bem-estar."
+    },
+    {
+      "id": 4,
+      "title": "Receita de Moqueca Baiana",
+      "content": "A moqueca baiana é um prato típico do Brasil, feito com peixe, leite de coco, azeite de dendê e temperos frescos. Sirva com arroz branco e farofa para uma refeição completa."
+    },
+    {
+      "id": 5,
+      "title": "Os Benefícios da Atividade Física Regular",
+      "content": "Praticar atividades físicas regularmente melhora o sistema cardiovascular, aumenta a disposição e ajuda a manter o peso saudável. O ideal é praticar pelo menos 30 minutos de exercícios por dia."
+    },
+    {
+      "id": 6,
+      "title": "As Melhores Práticas de Programação em JavaScript",
+      "content": "Para escrever código JavaScript eficiente, é importante seguir as melhores práticas, como evitar código repetitivo, usar funções puras, e sempre testar o código com ferramentas de teste automatizado."
+    },
+    {
+      "id": 7,
+      "title": "A Importância da Segurança na Internet",
+      "content": "Manter-se seguro na internet requer boas práticas, como usar senhas fortes, ativar autenticação de dois fatores, e evitar clicar em links desconhecidos ou baixar arquivos de fontes não confiáveis."
+    },
+    {
+      "id": 8,
+      "title": "Turismo no Brasil: Lugares Imperdíveis",
+      "content": "O Brasil é conhecido por suas belezas naturais, e lugares como o Rio de Janeiro, a Amazônia, e as Cataratas do Iguaçu são destinos turísticos imperdíveis para quem deseja explorar o país."
+    },
+    {
+      "id": 9,
+      "title": "Como Montar um Orçamento Familiar",
+      "content": "Organizar as finanças da família é essencial para manter o controle dos gastos e poupar dinheiro. Um bom orçamento deve incluir todas as despesas mensais e uma parte para imprevistos."
+    },
+    {
+      "id": 10,
+      "title": "O Futuro da Inteligência Artificial",
+      "content": "A inteligência artificial está revolucionando várias indústrias, desde a saúde até a automação de tarefas. Com os avanços recentes, espera-se que a IA traga ainda mais inovações nos próximos anos."
     }
   ]
 }
