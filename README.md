@@ -1,27 +1,73 @@
-# Projeto2
+# FeedNow
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+## Sumário
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Instruções de Instalação](#instruções-de-instalação)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Usar](#como-usar)
+- [Funcionalidades](#funcionalidades)
+- [Contribuição](#contribuição)
 
-## Development server
+## Sobre o Projeto
+O **FeedNow** é uma aplicação web onde os usuários podem fazer login e visualizar um feed de postagens. A aplicação utiliza **Angular 17** e **Angular Material** para criar um design clean e moderno, proporcionando uma boa experiência de usuário. O projeto inclui funcionalidades de autenticação e exibe postagens armazenadas em um servidor fake criado com **json-server**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instruções de Instalação
 
-## Code scaffolding
+### Pré-requisitos
+- **Node.js** versão `20.14` ou superior.
+- **Angular CLI** instalado globalmente:
+  ```bash
+  npm install -g @angular/cli
+  ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Passos para rodar o projeto
 
-## Build
+1. **Clone o repositório:**
+   ```bash
+   git clone git@github.com:riltonbispo/restic36-u5-projeto2.git
+   cd restic36-u5-projeto2
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-## Running unit tests
+3. **Execute o servidor JSON para as publicações:**
+   O **json-server** será usado como uma API fake.
+   ```bash
+   npx json-server --watch src/assets/data/db.json
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. **Inicie o servidor local do Angular:**
+   ```bash
+   npm run start
+   ```
 
-## Running end-to-end tests
+5. **Acesse a aplicação:**
+   Abra o navegador e vá até `http://localhost:4200` para visualizar o projeto.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Tecnologias Utilizadas
+- **Angular 17**: Framework front-end para criação de SPAs.
+- **Angular Material**: Conjunto de componentes UI para Angular.
+- **TypeScript**: Linguagem principal do projeto.
+- **json-server**: Servidor fake para simulação de uma API REST.
+- **HTML/CSS**: Para a estrutura e estilização da interface.
 
-## Further help
+## Como Usar
+1. Faça login usando um email e senha válidos.
+2. Após o login, você será redirecionado para a página de feed, onde poderá visualizar as postagens.
+3. As postagens são carregadas a partir de uma API fake fornecida pelo **json-server**.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Funcionalidades
+- **Autenticação de Usuário**: A aplicação contém uma página de login onde o usuário deve inserir seu email e senha.
+- **Feed de Publicações**: Após o login, o usuário é redirecionado para uma página de feed onde as postagens são carregadas e exibidas usando componentes do **Angular Material** como `mat-card` e `mat-grid-list`.
+
+## Contribuição
+Se você deseja contribuir com este projeto, siga os passos abaixo:
+
+1. Faça um **fork** do repositório.
+2. Crie uma nova branch para sua feature ou correção de bug (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`).
+4. Faça o push para a branch (`git push origin feature/nova-feature`).
+5. Abra um **Pull Request**.
