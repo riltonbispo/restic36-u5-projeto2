@@ -5,12 +5,14 @@ import {
   FormsModule,
   ReactiveFormsModule,
   FormGroup,
-  FormBuilder,
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field'
+import { Router } from '@angular/router'; 
+
+
 
 @Component({
   selector: 'app-login-form',
@@ -32,6 +34,7 @@ export class LoginFormComponent {
     ])
   });
 
+  constructor(private router: Router) {}
 
   get emailFormControl() {
     return this.loginForm.get('emailFormControl') as FormControl;
@@ -44,8 +47,9 @@ export class LoginFormComponent {
   onSubmit() {
     if (this.loginForm.valid) {
       const { emailFormControl, passWordFormControl } = this.loginForm.value;
-      console.log('Login successful:', { emailFormControl, passWordFormControl });
+      console.log('Login feito com Sucesso:', { emailFormControl, passWordFormControl });
+
+      this.router.navigate(['/feed']);
     }
-    console.log('Form submission attempted');
   }
 }
