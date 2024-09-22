@@ -1,0 +1,74 @@
+<div class="login-form___container">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+  
+      <img 
+        mat-card-image
+        src="https://openclipart.org/image/800px/76573"
+        alt="Photo of a Shiba Inu"
+        class="card-header-image"
+      >
+
+    <mat-card-content class="card-content">
+      <form class="card-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="card-form-field">
+          <mat-label>Email</mat-label>
+          <input 
+            type="email"
+            matInput  
+            [formControl]="emailFormControl"
+            placeholder="Ex. pat@exemple.com"
+          >
+
+          @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+            <mat-error>Email invalido</mat-error>
+          }
+
+          @if (emailFormControl.hasError('required')) {
+            <mat-error>
+              Email é <strong>obrigatorio</strong>
+            </mat-error>
+          }
+
+        </mat-form-field>
+
+        <mat-form-field class="card-form-field">
+          <mat-label>Senha</mat-label>
+          <input
+            type="password"
+            matInput
+            formControlName="passWordFormControl"
+            placeholder="*******"
+          >
+
+
+          @if (passwordFormControl.hasError('required')) {
+            <mat-error> 
+              Senha é <strong>obrigatorio</strong>
+            </mat-error>
+          }
+
+          @if (passwordFormControl.hasError('minlength')) {
+            <mat-error>
+              Informe ao menos <strong>5</strong> caracteres
+            </mat-error>
+          }
+
+        </mat-form-field>
+        
+        <button 
+          class="card-form-button" 
+          mat-raised-button 
+          color="primary" 
+          [disabled]="loginForm.invalid"
+        >
+          Entrar
+        </button>
+      
+      </form>
+    </mat-card-content>
+
+  </mat-card>
+</div>

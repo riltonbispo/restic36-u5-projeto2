@@ -1,0 +1,32 @@
+
+.login-form{
+  &___container  {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 16rem;
+  }
+}
+
+.card {
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+
+  &-content {
+    padding: 0;
+    width: 100%;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-header-image {
+  width: 60%;
+  margin-block: 2rem;
+}
+
