@@ -61,7 +61,7 @@ O **FeedNow** é uma aplicação web onde os usuários podem fazer login e visua
 
 ## Funcionalidades
 - **Autenticação de Usuário**: A aplicação contém uma página de login onde o usuário deve inserir seu email e senha.
-- **Feed de Publicações**: Após o login, o usuário é redirecionado para uma página de feed onde as postagens são carregadas e exibidas usando componentes do **Angular Material** como `mat-card` e `mat-grid-list`.
+- **Feed de Publicações**: Após o login, o usuário é redirecionado para uma página de feed onde as postagens são carregadas e exibidas usando componentes do **Angular Material**.
 
 ## Contribuição
 Se você deseja contribuir com este projeto, siga os passos abaixo:
